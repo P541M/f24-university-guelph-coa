@@ -3,6 +3,8 @@ import image1 from "./assets/f24/grouppic.jpg";
 import image2 from "./assets/f24/websters.jpg";
 import image3 from "./assets/f24/d7Improv.png";
 import image4 from "./assets/f24/d9Hist.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 
 const goals = [
   {
@@ -141,12 +143,23 @@ const F24UniversityGuelphCOA = () => {
       id="f24-uofg-college-of-arts-wtr"
       className="min-h-screen px-6 pb-20 pt-10 text-text transition-all duration-300 sm:px-8 md:px-16 lg:px-20"
     >
+      {/* Back to Portfolio Button */}
+      <div className="mb-6">
+        <a
+          href="https://p541m.github.io/portfolio/"
+          className="flex items-center text-primary hover:text-text transition-all duration-300"
+        >
+          <span aria-hidden="true">
+            <FontAwesomeIcon icon={faArrowLeft} className="mr-2" />
+          </span>
+          Back to Portfolio
+        </a>
+      </div>
       {/* Main Title */}
       <section className="mb-14">
         <h1 className="text-center text-4xl font-bold leading-snug text-text">
           A Canvas of Opportunity: Fall 2024 at the College of Arts
         </h1>
-
         <p className="mb-4 mt-3 text-left text-lg text-text">
           From September to December 2024, I had the privilege of working at the
           University of Guelph, College of Arts, for my second co-op work term
@@ -163,14 +176,12 @@ const F24UniversityGuelphCOA = () => {
           post-secondary setting.
         </p>
       </section>
-
       {/* 2. Information about the Employer */}
       <section className="mb-14">
         <h2 className="mb-4 text-center text-3xl font-bold text-primary">
           Behind the Scenes: Exploring the College of Arts
         </h2>
         <hr className="mb-4 border-divContrast" />
-
         {/* Responsive Layout for Image and Text */}
         <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8">
           {/* Image Section */}
@@ -183,7 +194,6 @@ const F24UniversityGuelphCOA = () => {
               Group picture of the marketing & communications team!
             </p>
           </div>
-
           {/* Text Section */}
           <div className="text-lg text-text lg:w-2/3">
             <p className="mb-4">
@@ -222,14 +232,12 @@ const F24UniversityGuelphCOA = () => {
           </div>
         </div>
       </section>
-
       {/* 3. Goals */}
       <section className="mb-14">
         <h2 className="mb-4 text-center text-3xl font-bold text-primary">
           A Palette of Progress: Goals and Growth
         </h2>
         <hr className="mb-4 border-divContrast" />
-
         <p className="mb-4 text-left text-lg text-text">
           During my work term at the University of Guelph, College of Arts, I
           set five key learning goals to enhance both my professional and
@@ -239,7 +247,6 @@ const F24UniversityGuelphCOA = () => {
           challenges I encountered, the skills I refined, and the outcomes I
           achieved!
         </p>
-
         {/* Expandable Goals */}
         <div>
           {goals.map((goal, index) => (
@@ -261,7 +268,6 @@ const F24UniversityGuelphCOA = () => {
                   </span>
                 </div>
               </button>
-
               <div
                 id={`goal-details-${index}`}
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
@@ -277,7 +283,6 @@ const F24UniversityGuelphCOA = () => {
                   <p className="text-sm sm:text-base md:text-base lg:text-lg xl:text-lg">
                     {goal.description}
                   </p>
-
                   {/* Challenges */}
                   {goal.challenges && (
                     <>
@@ -297,7 +302,6 @@ const F24UniversityGuelphCOA = () => {
                       )}
                     </>
                   )}
-
                   {/* Skills */}
                   <h3 className="mt-2 text-lg font-semibold text-primary">
                     Skills Developed:
@@ -313,7 +317,6 @@ const F24UniversityGuelphCOA = () => {
                       {goal.skills}
                     </p>
                   )}
-
                   <h3 className="mt-2 text-lg font-semibold text-primary">
                     Results:
                   </h3>
@@ -322,7 +325,6 @@ const F24UniversityGuelphCOA = () => {
                   </p>
                 </div>
               </div>
-
               {/* Divider between goals */}
               {index < goals.length - 1 && (
                 <hr className="my-4 border-divContrast" />
@@ -331,14 +333,12 @@ const F24UniversityGuelphCOA = () => {
           ))}
         </div>
       </section>
-
       {/* 4. Job Description */}
       <section className="mb-14">
         <h2 className="mb-4 text-center text-3xl font-bold text-primary">
           Crafting a Digital Experience: My Role in the Redesign
         </h2>
         <hr className="mb-4 border-divContrast" />
-
         <p className="mb-4 text-left text-lg text-text">
           Over the last four months, I’ve been diving deep into web migration,
           accessibility, and user experience design as the Website Redesign
@@ -387,7 +387,6 @@ const F24UniversityGuelphCOA = () => {
           effectively within a team, leading to significant enhancements for the
           College of Arts' online presence.
         </p>
-
         {/* Featured Projects with Dropdown */}
         <section className="mb-6">
           {workTermProjects.map((project, index) => (
@@ -409,7 +408,6 @@ const F24UniversityGuelphCOA = () => {
                   </span>
                 </div>
               </button>
-
               <div
                 id={`project-details-${index}`}
                 className={`overflow-hidden transition-all duration-500 ease-in-out ${
@@ -432,7 +430,6 @@ const F24UniversityGuelphCOA = () => {
                       <p className="text-sm sm:text-base md:text-base lg:text-lg xl:text-lg">
                         {project.description}
                       </p>
-
                       <div className="mt-8">
                         {/* Conditionally render the "Visit Project" button */}
                         {project.showVisitButton && (
@@ -451,7 +448,6 @@ const F24UniversityGuelphCOA = () => {
                   </div>
                 </div>
               </div>
-
               {/* Corrected Divider Condition */}
               {index < workTermProjects.length - 1 && (
                 <hr className="my-4 border-divContrast" />
@@ -459,7 +455,6 @@ const F24UniversityGuelphCOA = () => {
             </div>
           ))}
         </section>
-
         <p className="mb-4 text-left text-lg text-text">
           Overall, this role has given me the chance to blend tech-savvy tasks
           with creative thinking—whether I’m coding in Drupal, mapping out user
@@ -468,7 +463,6 @@ const F24UniversityGuelphCOA = () => {
           platforms that truly serve the College of Arts community.
         </p>
       </section>
-
       {/* 5. Conclusions */}
       <section className="mb-14">
         <h2 className="mb-4 text-center text-3xl font-bold text-primary">
@@ -488,14 +482,12 @@ const F24UniversityGuelphCOA = () => {
           digital environment can positively impact a community.
         </p>
       </section>
-
       {/* 6. Acknowledgments */}
       <section className="mb-14">
         <h2 className="mb-4 text-center text-3xl font-bold text-primary">
           A Gallery of Gratitude: Acknowledgments
         </h2>
         <hr className="mb-4 border-divContrast" />
-
         <div className="flex flex-col lg:flex-row lg:items-start lg:space-x-8">
           {/* Image Section */}
           <div className="lg:w-1/3">
@@ -508,7 +500,6 @@ const F24UniversityGuelphCOA = () => {
               Group picture of the Websters!
             </p>
           </div>
-
           {/* Text Section */}
           <div className="text-lg text-text lg:w-2/3">
             <p className="mb-4">
