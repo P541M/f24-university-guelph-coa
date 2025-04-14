@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/f24-university-guelph-coa/static/css/main.c79087ba.css",
+    "main.js": "/f24-university-guelph-coa/static/js/main.c608352b.js",
+    "static/media/websters.jpg": "/f24-university-guelph-coa/static/media/websters.743a596fcac1caf34922.jpg",
+    "static/media/grouppic.jpg": "/f24-university-guelph-coa/static/media/grouppic.5a5c99798bcea1e6f204.jpg",
+    "static/media/d7Improv.png": "/f24-university-guelph-coa/static/media/d7Improv.f8faf10ce57d28fe6b4e.png",
+    "static/media/d9Hist.png": "/f24-university-guelph-coa/static/media/d9Hist.c2e55e46915b52f61f41.png",
+    "index.html": "/f24-university-guelph-coa/index.html",
+    "main.c79087ba.css.map": "/f24-university-guelph-coa/static/css/main.c79087ba.css.map",
+    "main.c608352b.js.map": "/f24-university-guelph-coa/static/js/main.c608352b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c79087ba.css",
+    "static/js/main.c608352b.js"
+  ]
+}
